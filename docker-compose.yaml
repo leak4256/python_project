@@ -1,0 +1,28 @@
+version: '3'
+services:
+  sqlite3:
+    image: nouchka/sqlite3
+    stdin_open: true
+    tty: true
+    volumes:
+        - ./db:/root/db
+
+  python_project: 
+    container_name: python_project
+    build: 
+        context: .
+        args:
+          - PORT=1234
+          - user_name=lea_karni
+    # environment:
+    #   HOST_PORT : 1234
+    image : 111953211/python_project
+    ports:
+      - $HOST_PORT:1234
+    depends_on:
+      - sqlite3
+
+
+      
+
+

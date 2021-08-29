@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search and replace file names</title>
+    <style>html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: rgb(209, 102, 83);}
+a:link, a:visited {
+    background-color: white;
+    color: rgb(255, 82, 51);
+    border: 2px solid tomato;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover, a:active {
+    background-color: tomato;
+    color: white;
+  }
+  h1,h2{
+      color: rgb(255, 38, 0);
+  }
+  button{
+    background-color: tomato;
+    color: white;
+    border: 2px solid tomato;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }</style>
+</head>
+<body>
+<br><br><br><br><br><br>
+    <h1 align="center">search and replace file names</h1>
+
+            <div align="center">
+                <form action="/replace-link/" method="post">
+            <label>path of the file/s:</label>
+          <input  name="path"/>
+            <br><br>
+            <label>search:</label>
+          <input  name="oldName"/>
+           <br><br>
+        <label>replace to:</label>
+          <input name="newName"/>
+          <br><br>
+            <button type="submit" >replace</button>
+        </form>
+            <br><br>
+
+    </div>
+
+</body>
+</html>
