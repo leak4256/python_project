@@ -24,7 +24,7 @@ class backend:
         """function that replace the old file name with a new"""
 
         try:
-            path = conv(path)#convert path to real path
+            #path = conv(path)#convert path to real path
             if re.search(r'^\.', oldName) and re.search(r'^.', newName): #check if the user want to change the ending of the file
                 for count, filename in enumerate(os.listdir(path)): #search the file on the directory
                     if '.' in filename:
