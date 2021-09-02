@@ -14,8 +14,6 @@ services:
         args:
           - PORT=1234
           - user_name=lea_karni
-    # environment:
-    #   HOST_PORT : 1234
     image : 111953211/python_project
     ports:
       - $HOST_PORT:1234
